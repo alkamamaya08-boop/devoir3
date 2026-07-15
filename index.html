@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example d'un formulaire</title>
+</head>
+<body>
+  <header>
+    <h1>Formulaire d'inscription</h1>  
+</header>
+<main>
+    <form>
+    <div>
+    <label for="nom">Nom:</label>
+    <input type="text" placeholder="Entrez votre nom "required>
+    </div>
+
+    <div>
+    <label for="email">Email:</label>
+    <input type="email" placeholder="example@email.com" required>
+    </div>
+
+    <div>
+    <label for="password">Mot de passe:</label>
+    <input type="password" placeholder="Entrez votre mot de passe" required>
+    </div>
+
+    <div>
+    <label for ="age">Age:</label>
+    <input type="number" required>
+    </div>
+    
+    <div>
+     <label for="date"> Date de naissance:</label>
+    <input type="date" required>
+    </div>
+
+    <div>
+     <label for ="color">Couleur préférée:</label>
+     <input type="color" required>
+    </div>
+    
+    <div>
+    <label for="image">Photo de profil:</label>
+     <input type="file"required>
+    </div>
+
+    <div>
+    <label for ="gender">Genre:</label>
+    </div>
+    <div>
+    <input type="radio" name ="genre"required>
+    <label for="femme">Femme</label>
+    </div>
+
+    <div> 
+    <input type="radio" name ="genre" required>
+    <label for="homme">Homme</label>
+
+    </div>
+    <label for="types">Centres d'intérêt:</label>
+   <div>
+    <input type="checkbox" required>
+    <label for="Music">Musique</label> 
+
+    <input type="checkbox" required>
+    <label for="Sport">Sport</label>
+</div>
+  <div>
+  <label for="Niveau">Niveau d'étude:</label>
+
+    <select name ="Niveau d'étude" required> 
+    <option value="choose">--Choisissez--</option>
+    <option value="Licence">Licence</option>
+    <option value="Master">Master</option>
+    </select>
+    </div>
+
+    <div>
+        <label for="message">Pourquoi vous inscrire?</label>
+        <div>
+        <textarea name="message" placeholder="Expliquer ici..." required></textarea>
+        </div>
+
+    </div>
+
+    <div>
+
+        <input type="submit" value ="S'inscrire">
+        <input type="reset" value="Réinitialiser">
+    </div>
+ <div>
+    <h2>Image</h2>
+    <figure>
+    <img src="image.jfif" alt="Image d'inscription">
+    <figcaption>Example de photo de profil</figcaption>
+    </figure>
+</div>
+
+<div>
+
+<h2>Audio</h2>
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+<div>
+<h2>Vidéo MP4</h2>
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  </video>
+
+  </div>
+
+  <div>
+  <h2>Liste des inscrits(exemple)</h2>
+  <table border="1">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Niveau</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Amina</td>
+            <td>amina@mail.com</td>
+            <td>Licence</td>
+        </tr>
+        <tr>
+            <td>Yacine</td>
+            <td>yacine@mail.com</td>
+            <td>Master</td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+</form>
+</main>
+</body>
+</html>
